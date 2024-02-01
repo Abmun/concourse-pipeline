@@ -4,7 +4,7 @@ resources:
   source:
     uri: https://github.com/Abmun/concourse-resource.git
     branch: main
-    type: git
+  type: git
     
 jobs:
 - name: announce
