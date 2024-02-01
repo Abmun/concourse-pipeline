@@ -1,0 +1,13 @@
+resources:
+- name: git-repo-1
+  check_every: 30m
+  source:
+    uri: https://github.com/Abmun/concourse-resource.git
+    branch: main
+    type: git
+    
+jobs:
+- name: announce
+  plan:
+  - get: git-repo-1
+    trigger: true
